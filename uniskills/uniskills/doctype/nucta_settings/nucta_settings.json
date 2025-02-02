@@ -13,7 +13,7 @@
   "under_maintenance",
   "stats_tab",
   "hi",
-  "nucta_average_stats",
+  "uniskills_average_stats",
   "market_requirement_stats"
  ],
  "fields": [
@@ -30,8 +30,8 @@
   {
    "fieldname": "hi",
    "fieldtype": "Table",
-   "label": "NUCTA Top Stats",
-   "options": "NUCTA Top Stats"
+   "label": "uniskills Top Stats",
+   "options": "uniskills Top Stats"
   },
   {
    "fieldname": "settings_tab",
@@ -39,10 +39,10 @@
    "label": "Settings"
   },
   {
-   "fieldname": "nucta_average_stats",
+   "fieldname": "uniskills_average_stats",
    "fieldtype": "Table",
-   "label": "NUCTA Average Stats",
-   "options": "NUCTA Average Stats"
+   "label": "uniskills Average Stats",
+   "options": "uniskills Average Stats"
   },
   {
    "fieldname": "market_requirement_stats",
@@ -88,8 +88,8 @@
  "links": [],
  "modified": "2024-10-28 18:12:03.889174",
  "modified_by": "Administrator",
- "module": "Nucta",
- "name": "NUCTA Settings",
+ "module": "uniskills",
+ "name": "uniskills Settings",
  "owner": "Administrator",
  "permissions": [
   {
@@ -108,7 +108,7 @@
    "email": 1,
    "print": 1,
    "read": 1,
-   "role": "Nucta Admin",
+   "role": "uniskills Admin",
    "share": 1,
    "write": 1
   },
@@ -118,7 +118,7 @@
    "email": 1,
    "print": 1,
    "read": 1,
-   "role": "Nucta Moderator",
+   "role": "uniskills Moderator",
    "share": 1
   },
   {
@@ -127,7 +127,7 @@
    "email": 1,
    "print": 1,
    "read": 1,
-   "role": "Nucta Super Admin",
+   "role": "uniskills Super Admin",
    "share": 1,
    "write": 1
   }

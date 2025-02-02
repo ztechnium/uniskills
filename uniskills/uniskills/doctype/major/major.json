@@ -29,7 +29,7 @@
  "links": [],
  "modified": "2024-11-10 12:14:58.045654",
  "modified_by": "Administrator",
- "module": "Nucta",
+ "module": "uniskills",
  "name": "Major",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
@@ -56,7 +56,7 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Nucta Super Admin",
+   "role": "uniskills Super Admin",
    "share": 1,
    "write": 1
   },
@@ -68,7 +68,7 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Nucta Admin",
+   "role": "uniskills Admin",
    "share": 1,
    "write": 1
   },
@@ -80,12 +80,12 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Nucta Moderator",
+   "role": "uniskills Moderator",
    "share": 1,
    "write": 1
   }
  ],
- "route": "app/nucta",
+ "route": "app/uniskills",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],

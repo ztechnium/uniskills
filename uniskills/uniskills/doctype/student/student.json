@@ -1,7 +1,7 @@
 {
  "actions": [
   {
-   "action": "nucta.nucta.apis.students_update.student_update_background_jobs",
+   "action": "uniskills.uniskills.apis.students_update.student_update_background_jobs",
    "action_type": "Server Action",
    "group": "Actions",
    "label": "Update Stats"
@@ -249,7 +249,7 @@
  "make_attachments_public": 1,
  "modified": "2024-11-09 19:08:44.864605",
  "modified_by": "Administrator",
- "module": "Nucta",
+ "module": "uniskills",
  "name": "Student",
  "naming_rule": "Expression",
  "owner": "Administrator",
@@ -276,7 +276,7 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Nucta Super Admin",
+   "role": "uniskills Super Admin",
    "share": 1,
    "write": 1
   },
@@ -288,7 +288,7 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Nucta Admin",
+   "role": "uniskills Admin",
    "share": 1,
    "write": 1
   },
@@ -300,7 +300,7 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Nucta Moderator",
+   "role": "uniskills Moderator",
    "share": 1,
    "write": 1
   }

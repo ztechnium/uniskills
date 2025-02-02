@@ -1,5 +1,5 @@
-app_name = "nucta"
-app_title = "Nucta"
+app_name = "uniskills"
+app_title = "uniskills"
 app_publisher = "ZTechnium"
 app_description = "Nile University Module"
 app_email = "mohamad.osama@ztechnium.com"
@@ -14,15 +14,15 @@ fixtures = ["Server Script", "Client Script", "Custom Field", "Custom DocPerm"]
 
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/nucta/css/nucta.css"
-# app_include_js = "/assets/nucta/js/nucta.js"
+# app_include_css = "/assets/uniskills/css/uniskills.css"
+# app_include_js = "/assets/uniskills/js/uniskills.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/nucta/css/nucta.css"
-# web_include_js = "/assets/nucta/js/nucta.js"
+# web_include_css = "/assets/uniskills/css/uniskills.css"
+# web_include_js = "/assets/uniskills/js/uniskills.js"
 
 # include custom scss in every website theme (without file extension ".scss")
-# website_theme_scss = "nucta/public/scss/website"
+# website_theme_scss = "uniskills/public/scss/website"
 
 # include js, css files in header of web form
 # webform_include_js = {"doctype": "public/js/doctype.js"}
@@ -40,7 +40,7 @@ fixtures = ["Server Script", "Client Script", "Custom Field", "Custom DocPerm"]
 # Svg Icons
 # ------------------
 # include app icons in desk
-# app_include_icons = "nucta/public/icons.svg"
+# app_include_icons = "uniskills/public/icons.svg"
 
 # Home Pages
 # ----------
@@ -64,43 +64,43 @@ fixtures = ["Server Script", "Client Script", "Custom Field", "Custom DocPerm"]
 
 # add methods and filters to jinja environment
 # jinja = {
-# 	"methods": "nucta.utils.jinja_methods",
-# 	"filters": "nucta.utils.jinja_filters"
+# 	"methods": "uniskills.utils.jinja_methods",
+# 	"filters": "uniskills.utils.jinja_filters"
 # }
 
 # Installation
 # ------------
 
-# before_install = "nucta.install.before_install"
-# after_install = "nucta.install.after_install"
+# before_install = "uniskills.install.before_install"
+# after_install = "uniskills.install.after_install"
 
 # Uninstallation
 # ------------
 
-# before_uninstall = "nucta.uninstall.before_uninstall"
-# after_uninstall = "nucta.uninstall.after_uninstall"
+# before_uninstall = "uniskills.uninstall.before_uninstall"
+# after_uninstall = "uniskills.uninstall.after_uninstall"
 
 # Integration Setup
 # ------------------
 # To set up dependencies/integrations with other apps
 # Name of the app being installed is passed as an argument
 
-# before_app_install = "nucta.utils.before_app_install"
-# after_app_install = "nucta.utils.after_app_install"
+# before_app_install = "uniskills.utils.before_app_install"
+# after_app_install = "uniskills.utils.after_app_install"
 
 # Integration Cleanup
 # -------------------
 # To clean up dependencies/integrations with other apps
 # Name of the app being uninstalled is passed as an argument
 
-# before_app_uninstall = "nucta.utils.before_app_uninstall"
-# after_app_uninstall = "nucta.utils.after_app_uninstall"
+# before_app_uninstall = "uniskills.utils.before_app_uninstall"
+# after_app_uninstall = "uniskills.utils.after_app_uninstall"
 
 # Desk Notifications
 # ------------------
 # See frappe.core.notifications.get_notification_config
 
-# notification_config = "nucta.notifications.get_notification_config"
+# notification_config = "uniskills.notifications.get_notification_config"
 
 # Permissions
 # -----------
@@ -139,39 +139,39 @@ fixtures = ["Server Script", "Client Script", "Custom Field", "Custom DocPerm"]
 
 # scheduler_events = {
 # 	"all": [
-# 		"nucta.tasks.all"
+# 		"uniskills.tasks.all"
 # 	],
 # 	"daily": [
-# 		"nucta.tasks.daily"
+# 		"uniskills.tasks.daily"
 # 	],
 # 	"hourly": [
-# 		"nucta.tasks.hourly"
+# 		"uniskills.tasks.hourly"
 # 	],
 # 	"weekly": [
-# 		"nucta.tasks.weekly"
+# 		"uniskills.tasks.weekly"
 # 	],
 # 	"monthly": [
-# 		"nucta.tasks.monthly"
+# 		"uniskills.tasks.monthly"
 # 	],
 # }
 
 # Testing
 # -------
 
-# before_tests = "nucta.install.before_tests"
+# before_tests = "uniskills.install.before_tests"
 
 # Overriding Methods
 # ------------------------------
 #
 # override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "nucta.event.get_events"
+# 	"frappe.desk.doctype.event.event.get_events": "uniskills.event.get_events"
 # }
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
 # along with any modifications made in other Frappe apps
 # override_doctype_dashboards = {
-# 	"Task": "nucta.task.get_dashboard_data"
+# 	"Task": "uniskills.task.get_dashboard_data"
 # }
 
 # exempt linked doctypes from being automatically cancelled
@@ -185,13 +185,13 @@ fixtures = ["Server Script", "Client Script", "Custom Field", "Custom DocPerm"]
 
 # Request Events
 # ----------------
-# before_request = ["nucta.utils.before_request"]
-# after_request = ["nucta.utils.after_request"]
+# before_request = ["uniskills.utils.before_request"]
+# after_request = ["uniskills.utils.after_request"]
 
 # Job Events
 # ----------
-# before_job = ["nucta.utils.before_job"]
-# after_job = ["nucta.utils.after_job"]
+# before_job = ["uniskills.utils.before_job"]
+# after_job = ["uniskills.utils.after_job"]
 
 # User Data Protection
 # --------------------
@@ -221,7 +221,7 @@ fixtures = ["Server Script", "Client Script", "Custom Field", "Custom DocPerm"]
 # --------------------------------
 
 # auth_hooks = [
-# 	"nucta.auth.validate"
+# 	"uniskills.auth.validate"
 # ]
 
 # Automatically update python controller files with type annotations for this app.
