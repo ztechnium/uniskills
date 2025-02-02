@@ -1,0 +1,169 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:Internship-{#}",
+ "creation": "2024-10-07 12:31:09.916186",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "activity_name",
+  "experience_level",
+  "work_mode",
+  "location",
+  "job_type",
+  "internship_status",
+  "column_break_jwhc",
+  "hiring_company",
+  "about_company",
+  "section_break_dajc",
+  "job_description",
+  "internship_skills_requirement"
+ ],
+ "fields": [
+  {
+   "fieldname": "activity_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Job Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "experience_level",
+   "fieldtype": "Select",
+   "label": "Experience Level",
+   "options": "Entry Level\nMid Level\nSenior Level"
+  },
+  {
+   "fieldname": "work_mode",
+   "fieldtype": "Select",
+   "label": "Work Mode",
+   "options": "Remote\nOn-Site\nHybrid"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Country"
+  },
+  {
+   "fieldname": "job_type",
+   "fieldtype": "Select",
+   "label": "Job Type",
+   "options": "Full Time\nPart Time\nContract"
+  },
+  {
+   "fieldname": "column_break_jwhc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hiring_company",
+   "fieldtype": "Link",
+   "label": "Hiring Company",
+   "options": "Customer"
+  },
+  {
+   "fetch_from": "hiring_company.custom_about_company",
+   "fieldname": "about_company",
+   "fieldtype": "Text Editor",
+   "label": "About The Company"
+  },
+  {
+   "fieldname": "section_break_dajc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "job_description",
+   "fieldtype": "Text Editor",
+   "label": "Job Description"
+  },
+  {
+   "fieldname": "internship_skills_requirement",
+   "fieldtype": "Table",
+   "label": "Internship Skills Requirement",
+   "options": "Internship Skills Requirement"
+  },
+  {
+   "default": "Open",
+   "fieldname": "internship_status",
+   "fieldtype": "Select",
+   "label": "Internship Status",
+   "options": "Open\nClosed"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "group": "Links",
+   "link_doctype": "Job Application",
+   "link_fieldname": "apply_for"
+  }
+ ],
+ "make_attachments_public": 1,
+ "modified": "2024-10-31 14:52:46.135635",
+ "modified_by": "Administrator",
+ "module": "Nucta",
+ "name": "Job Internship",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Nucta Super Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Nucta Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Nucta Moderator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "activity_name",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

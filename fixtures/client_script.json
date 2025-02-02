@@ -1,0 +1,24 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Student",
+  "enabled": 0,
+  "modified": "2024-10-17 15:48:20.811097",
+  "module": "Nucta",
+  "name": "Students Stats Update",
+  "script": "frappe.listview_settings['Student'] = {\r\n    onload: function(listview) {\r\n        listview.page.add_action_item(__('Update Selected Students'), function() {\r\n            // Get selected student IDs\r\n            let selected_students = listview.get_checked_items(true);\r\n            if (selected_students.length > 0) {\r\n                frappe.call({\r\n                    method: \"nucta.nucta.apis.students_update.student_update_background_jobs\",\r\n                    args: {\r\n                        students: selected_students\r\n                    },\r\n                    callback: function(r) {\r\n                        frappe.msgprint(__('Student update job initiated.'));\r\n                    }\r\n                });\r\n            } else {\r\n                frappe.msgprint(__('Please select at least one student.'));\r\n            }\r\n        });\r\n    }\r\n};\r\n",
+  "view": "List"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Student",
+  "enabled": 1,
+  "modified": "2024-10-17 15:51:17.879420",
+  "module": "Nucta",
+  "name": "Update All Students Stats",
+  "script": "frappe.listview_settings['Student'] = {\r\n    onload: function(listview) {\r\n        listview.page.add_menu_item(__('Update All Students'), function() {\r\n            // Call the server-side method without any inputs\r\n            frappe.call({\r\n                method: \"nucta.nucta.apis.students_update.student_update_background_jobs\",\r\n                callback: function(r) {\r\n                    frappe.msgprint(__('Student update job has been initiated.'));\r\n                }\r\n            });\r\n        });\r\n    }\r\n};\r\n",
+  "view": "List"
+ }
+]

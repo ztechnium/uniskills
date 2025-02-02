@@ -1,0 +1,165 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{student_nu_id}-{apply_for}-{#}",
+ "creation": "2024-10-07 14:46:27.611481",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "student_id",
+  "student_name",
+  "student_nu_id",
+  "student_nu_email",
+  "apply_for",
+  "column_break_column",
+  "status",
+  "status_type",
+  "date_applied",
+  "date_enrolled",
+  "date_completed"
+ ],
+ "fields": [
+  {
+   "fieldname": "student_id",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Student ID",
+   "options": "Student"
+  },
+  {
+   "fetch_from": "student_id.student_name",
+   "fieldname": "student_name",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Student Name"
+  },
+  {
+   "fetch_from": "student_id.nu_id",
+   "fieldname": "student_nu_id",
+   "fieldtype": "Read Only",
+   "in_standard_filter": 1,
+   "label": "Student NU ID"
+  },
+  {
+   "fetch_from": "student_id.email",
+   "fieldname": "student_nu_email",
+   "fieldtype": "Read Only",
+   "in_standard_filter": 1,
+   "label": "Student NU Email"
+  },
+  {
+   "fieldname": "column_break_column",
+   "fieldtype": "Column Break",
+   "label": "Column Break"
+  },
+  {
+   "default": "Applied-Job Internship",
+   "fieldname": "status",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Enrollment Status",
+   "link_filters": "[[\"Enrollment Status\",\"enabled_for_doctype\",\"=\",\"Job Internship\"]]",
+   "options": "Enrollment Status"
+  },
+  {
+   "fieldname": "date_enrolled",
+   "fieldtype": "Date",
+   "label": "Date Joined"
+  },
+  {
+   "fieldname": "date_completed",
+   "fieldtype": "Date",
+   "label": "Date Completed"
+  },
+  {
+   "fieldname": "apply_for",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Apply For",
+   "options": "Job Internship"
+  },
+  {
+   "fieldname": "date_applied",
+   "fieldtype": "Date",
+   "label": "Date Applied"
+  },
+  {
+   "fetch_from": "status.status_type",
+   "fieldname": "status_type",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status Type"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-31 14:50:26.817942",
+ "modified_by": "Administrator",
+ "module": "Nucta",
+ "name": "Job Application",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Nucta Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Nucta Moderator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Nucta Super Admin",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

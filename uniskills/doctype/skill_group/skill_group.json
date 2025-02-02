@@ -1,0 +1,176 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:skill_group_name",
+ "creation": "2024-09-17 01:19:25.018919",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "skill_group_name",
+  "plot",
+  "abbreviation",
+  "description",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_skill_group",
+  "column_break_eqjb",
+  "group_type",
+  "diminishing_return_factor",
+  "image"
+ ],
+ "fields": [
+  {
+   "fieldname": "skill_group_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Skill Group Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "plot",
+   "fieldtype": "Check",
+   "label": "Plot"
+  },
+  {
+   "fieldname": "abbreviation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Abbreviation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Skill Group"
+  },
+  {
+   "fieldname": "parent_skill_group",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Parent Skill Group",
+   "options": "Skill Group"
+  },
+  {
+   "fieldname": "column_break_eqjb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "group_type",
+   "fieldtype": "Select",
+   "label": "Group Type",
+   "options": "\nAcademic\nNon-Academic"
+  },
+  {
+   "fieldname": "diminishing_return_factor",
+   "fieldtype": "Float",
+   "label": "Diminishing Return Factor"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2024-10-31 14:52:09.778245",
+ "modified_by": "Administrator",
+ "module": "Nucta",
+ "name": "Skill Group",
+ "naming_rule": "By fieldname",
+ "nsm_parent_field": "parent_skill_group",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Nucta Super Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Nucta Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Nucta Moderator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

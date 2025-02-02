@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-14 00:57:43.319028",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "skill_group",
+  "sub_skill",
+  "skill_total",
+  "current_normalized_total",
+  "previous_total",
+  "previous_normalized_total"
+ ],
+ "fields": [
+  {
+   "fieldname": "sub_skill",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sub-Skill",
+   "options": "Sub-Skill"
+  },
+  {
+   "fieldname": "skill_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Skill Group",
+   "options": "Skill Group"
+  },
+  {
+   "fieldname": "skill_total",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Skill Total"
+  },
+  {
+   "fieldname": "current_normalized_total",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Current Calculated Total"
+  },
+  {
+   "fieldname": "previous_total",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Previous Total"
+  },
+  {
+   "fieldname": "previous_normalized_total",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Previous Calculated Total"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-15 12:17:02.499101",
+ "modified_by": "Administrator",
+ "module": "Nucta",
+ "name": "Skill Groups Aggregation",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

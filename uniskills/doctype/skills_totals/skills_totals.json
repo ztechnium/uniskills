@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-14 00:53:09.537409",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sub_skill",
+  "current_points",
+  "current_diminished_points",
+  "current_normalized_points",
+  "previous_points",
+  "previous_normalized_points"
+ ],
+ "fields": [
+  {
+   "fieldname": "sub_skill",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sub-Skill",
+   "options": "Sub-Skill"
+  },
+  {
+   "fieldname": "current_points",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Current Points"
+  },
+  {
+   "fieldname": "current_normalized_points",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Current Normalized Points"
+  },
+  {
+   "fieldname": "previous_points",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Previous Points"
+  },
+  {
+   "fieldname": "previous_normalized_points",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Previous Normalized Points"
+  },
+  {
+   "fieldname": "current_diminished_points",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Current Diminished Points"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-14 01:00:54.975211",
+ "modified_by": "Administrator",
+ "module": "Nucta",
+ "name": "Skills Totals",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

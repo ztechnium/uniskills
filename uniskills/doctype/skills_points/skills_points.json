@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-14 00:50:26.790390",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "semester",
+  "sub_skill",
+  "role",
+  "points"
+ ],
+ "fields": [
+  {
+   "fieldname": "sub_skill",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sub-Skill",
+   "options": "Sub-Skill"
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Activity"
+  },
+  {
+   "fieldname": "semester",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Semester",
+   "options": "Semester"
+  },
+  {
+   "fieldname": "points",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Points"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-14 00:52:20.931306",
+ "modified_by": "Administrator",
+ "module": "Nucta",
+ "name": "Skills Points",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

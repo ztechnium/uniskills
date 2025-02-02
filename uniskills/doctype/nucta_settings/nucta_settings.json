@@ -1,0 +1,138 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-08 17:29:27.374029",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "settings_tab",
+  "current_semester",
+  "student_portal_link",
+  "column_break_axzs",
+  "last_semester",
+  "under_maintenance",
+  "stats_tab",
+  "hi",
+  "nucta_average_stats",
+  "market_requirement_stats"
+ ],
+ "fields": [
+  {
+   "fieldname": "student_portal_link",
+   "fieldtype": "Data",
+   "label": "Student Portal Link"
+  },
+  {
+   "fieldname": "stats_tab",
+   "fieldtype": "Tab Break",
+   "label": "Stats"
+  },
+  {
+   "fieldname": "hi",
+   "fieldtype": "Table",
+   "label": "NUCTA Top Stats",
+   "options": "NUCTA Top Stats"
+  },
+  {
+   "fieldname": "settings_tab",
+   "fieldtype": "Tab Break",
+   "label": "Settings"
+  },
+  {
+   "fieldname": "nucta_average_stats",
+   "fieldtype": "Table",
+   "label": "NUCTA Average Stats",
+   "options": "NUCTA Average Stats"
+  },
+  {
+   "fieldname": "market_requirement_stats",
+   "fieldtype": "Table",
+   "label": "Market Requirement Stats",
+   "options": "Market Requirement Stats"
+  },
+  {
+   "fieldname": "current_semester",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Current Semester",
+   "options": "Semester",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "current_semester.previous_semester",
+   "fetch_if_empty": 1,
+   "fieldname": "last_semester",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Previous Semester",
+   "options": "Semester",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_axzs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "under_maintenance",
+   "fieldtype": "Check",
+   "label": "Under Maintenance"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-10-28 18:12:03.889174",
+ "modified_by": "Administrator",
+ "module": "Nucta",
+ "name": "NUCTA Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Nucta Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Nucta Moderator",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Nucta Super Admin",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

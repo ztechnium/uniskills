@@ -1,0 +1,170 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:sub_skill_name",
+ "creation": "2024-09-17 02:25:43.373356",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "sub_skill_name",
+  "sub_skill_code",
+  "description",
+  "skill_group_contribution",
+  "related_to_sub_skill",
+  "image",
+  "column_break_fkkj",
+  "skill_group",
+  "contribution_weight",
+  "diminishing_return_factor",
+  "refresh",
+  "section_break_wjrr",
+  "sub_skill_contributors"
+ ],
+ "fields": [
+  {
+   "fieldname": "sub_skill_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Sub-Skill Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "sub_skill_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Sub-Skill Code"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "skill_group_contribution",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Skill Group Contribution",
+   "options": "Skill Group Contribution"
+  },
+  {
+   "fieldname": "related_to_sub_skill",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Related to Sub-Skill",
+   "options": "Sub-Skill"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "column_break_fkkj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "skill_group",
+   "fieldtype": "Link",
+   "label": "Skill Group",
+   "options": "Skill Group"
+  },
+  {
+   "fieldname": "contribution_weight",
+   "fieldtype": "Float",
+   "label": "Contribution Weight"
+  },
+  {
+   "fieldname": "diminishing_return_factor",
+   "fieldtype": "Float",
+   "label": "Diminishing Return Factor"
+  },
+  {
+   "fieldname": "section_break_wjrr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sub_skill_contributors",
+   "fieldtype": "Table",
+   "label": "Sub-Skill Contributors",
+   "options": "Sub-Skill Contributors"
+  },
+  {
+   "default": "0",
+   "fieldname": "refresh",
+   "fieldtype": "Check",
+   "label": "Refresh"
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-31 14:51:58.191726",
+ "modified_by": "Administrator",
+ "module": "Nucta",
+ "name": "Sub-Skill",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Nucta Super Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Nucta Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Nucta Moderator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "sub_skill_code, related_to_sub_skill",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

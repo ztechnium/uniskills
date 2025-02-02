@@ -1,0 +1,315 @@
+{
+ "actions": [
+  {
+   "action": "nucta.nucta.apis.students_update.student_update_background_jobs",
+   "action_type": "Server Action",
+   "group": "Actions",
+   "label": "Update Stats"
+  }
+ ],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{nu_id}",
+ "creation": "2024-09-17 12:33:00.782808",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "details_section",
+  "student_name",
+  "nu_id",
+  "email",
+  "student_phone_number",
+  "college",
+  "department",
+  "curriculum",
+  "student_image",
+  "column_break_wbws",
+  "last_registered_year",
+  "last_registered_semester",
+  "last_enrollment_semester",
+  "last_enrollment_status",
+  "last_enrollment_year",
+  "current_semester",
+  "number_of_semesters",
+  "student_management_section",
+  "student_advisor_email",
+  "advisor_id",
+  "advisor_name",
+  "scu_notes",
+  "earned_points_tab",
+  "skills_points",
+  "competencies_tab",
+  "skills_totals",
+  "skill_groups_aggregation",
+  "skill_groups_totals"
+ ],
+ "fields": [
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "student_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Student Name"
+  },
+  {
+   "columns": 1,
+   "fieldname": "nu_id",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "NU ID",
+   "search_index": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Email"
+  },
+  {
+   "fieldname": "student_phone_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Student Phone Number"
+  },
+  {
+   "fetch_from": "major.school",
+   "fetch_if_empty": 1,
+   "fieldname": "college",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "College/School",
+   "options": "College"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Department",
+   "options": "School Department"
+  },
+  {
+   "fieldname": "curriculum",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Curriculum",
+   "options": "Curriculum"
+  },
+  {
+   "fieldname": "student_image",
+   "fieldtype": "Attach Image",
+   "label": "Student Image"
+  },
+  {
+   "fieldname": "column_break_wbws",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_registered_year",
+   "fieldtype": "Int",
+   "in_standard_filter": 1,
+   "label": "Last Registered Year"
+  },
+  {
+   "fieldname": "last_registered_semester",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Last Registered Semester",
+   "options": "\nSPRG\nFALL\nSUMMER"
+  },
+  {
+   "fieldname": "last_enrollment_semester",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Last Enrollment Semester",
+   "options": "\nSPRG\nFALL\nSUMMER"
+  },
+  {
+   "fieldname": "last_enrollment_status",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Last Enrollment Status",
+   "options": "\nActive\nGraduated\nGraduation Requests\nInactive\nNo Show\nProgram Withdrawal\nSemester Withdrawal\nTerminated\nWithdrawn\nSemeter Withdrawal\nSemester Withdrawal"
+  },
+  {
+   "fieldname": "last_enrollment_year",
+   "fieldtype": "Int",
+   "in_standard_filter": 1,
+   "label": "Last Enrollment Year"
+  },
+  {
+   "fieldname": "current_semester",
+   "fieldtype": "Data",
+   "label": "Current Semester"
+  },
+  {
+   "fieldname": "number_of_semesters",
+   "fieldtype": "Int",
+   "label": "Number of Semesters"
+  },
+  {
+   "fieldname": "student_management_section",
+   "fieldtype": "Section Break",
+   "label": "Student Management"
+  },
+  {
+   "fieldname": "student_advisor_email",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Student Advisor Email"
+  },
+  {
+   "fieldname": "advisor_id",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "ADVISOR ID"
+  },
+  {
+   "fieldname": "advisor_name",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Advisor name"
+  },
+  {
+   "fieldname": "scu_notes",
+   "fieldtype": "Text Editor",
+   "label": "SCU Notes"
+  },
+  {
+   "fieldname": "competencies_tab",
+   "fieldtype": "Tab Break",
+   "label": "Competencies"
+  },
+  {
+   "fieldname": "skills_totals",
+   "fieldtype": "Table",
+   "label": "Skills Totals",
+   "options": "Skills Totals"
+  },
+  {
+   "fieldname": "skill_groups_aggregation",
+   "fieldtype": "Table",
+   "label": "Skill Groups Aggregation",
+   "options": "Skill Groups Aggregation"
+  },
+  {
+   "fieldname": "skill_groups_totals",
+   "fieldtype": "Table",
+   "label": "Skill Groups Totals",
+   "options": "Skill Groups Totals"
+  },
+  {
+   "fieldname": "skills_points",
+   "fieldtype": "Table",
+   "label": "Skills Points",
+   "options": "Skills Points"
+  },
+  {
+   "fieldname": "earned_points_tab",
+   "fieldtype": "Tab Break",
+   "label": "Earned Points"
+  }
+ ],
+ "image_field": "student_image",
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "group": "Links",
+   "link_doctype": "Academic Course Enrollment",
+   "link_fieldname": "student_id"
+  },
+  {
+   "group": "Links",
+   "link_doctype": "Extra Course Enrollment",
+   "link_fieldname": "student_id"
+  },
+  {
+   "group": "Links",
+   "link_doctype": "Club Enrollment",
+   "link_fieldname": "student_id"
+  },
+  {
+   "group": "Links",
+   "link_doctype": "Job Application",
+   "link_fieldname": "student_id"
+  }
+ ],
+ "make_attachments_public": 1,
+ "modified": "2024-11-09 19:08:44.864605",
+ "modified_by": "Administrator",
+ "module": "Nucta",
+ "name": "Student",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Nucta Super Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Nucta Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Nucta Moderator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "nu_id,student_name,email,college,department,curriculum",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-16 00:50:55.655105",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sub_skill",
+  "skill_group",
+  "sub_skill_contribution",
+  "role",
+  "diminishing_returns_factor"
+ ],
+ "fields": [
+  {
+   "fieldname": "sub_skill",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sub-Skill",
+   "options": "Sub-Skill"
+  },
+  {
+   "fetch_from": "sub_skill.skill_group",
+   "fieldname": "skill_group",
+   "fieldtype": "Read Only",
+   "label": "Skill Group"
+  },
+  {
+   "fieldname": "sub_skill_contribution",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Sub-Skill Contribution"
+  },
+  {
+   "default": "Student",
+   "fieldname": "role",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Role",
+   "options": "Student\nHead\nMember\nParticipant\nAchieved\nInvolved"
+  },
+  {
+   "fieldname": "diminishing_returns_factor",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Diminishing Return Factor"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-16 00:52:48.843575",
+ "modified_by": "Administrator",
+ "module": "Nucta",
+ "name": "Extra Course Enrollment Contribution Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

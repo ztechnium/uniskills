@@ -1,0 +1,249 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{student_nu_id}-{enrollment_to}",
+ "creation": "2024-09-17 14:35:00.932455",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "engine": "InnoDB",
+ "field_order": [
+  "student_id",
+  "student_name",
+  "student_nu_id",
+  "student_nu_email",
+  "enrollment_to",
+  "grade",
+  "course_credits",
+  "course_sub_type",
+  "course_section",
+  "program",
+  "column_break_xzzq",
+  "status",
+  "status_type",
+  "date_enrolled",
+  "date_completed",
+  "semester",
+  "active_semester",
+  "refresh",
+  "section_break_gxjn",
+  "academic_course_enrollment_contribution_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "student_id",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Student ID",
+   "options": "Student",
+   "search_index": 1
+  },
+  {
+   "columns": 2,
+   "fetch_from": "student_id.student_name",
+   "fieldname": "student_name",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Student Name"
+  },
+  {
+   "fetch_from": "student_id.nu_id",
+   "fieldname": "student_nu_id",
+   "fieldtype": "Read Only",
+   "in_standard_filter": 1,
+   "label": "Student NU ID"
+  },
+  {
+   "columns": 2,
+   "fetch_from": "student_id.email",
+   "fieldname": "student_nu_email",
+   "fieldtype": "Read Only",
+   "in_standard_filter": 1,
+   "label": "Student NU Email"
+  },
+  {
+   "fieldname": "enrollment_to",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Enrollment to",
+   "options": "Academic Course"
+  },
+  {
+   "fieldname": "column_break_xzzq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "default": "Applied-Academic Course",
+   "fieldname": "status",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Enrollment Status",
+   "link_filters": "[[\"Enrollment Status\",\"enabled_for_doctype\",\"=\",\"Academic Course\"]]",
+   "options": "Enrollment Status"
+  },
+  {
+   "fetch_from": "status.status_type",
+   "fieldname": "status_type",
+   "fieldtype": "Read Only",
+   "in_standard_filter": 1,
+   "label": "Status Type"
+  },
+  {
+   "fieldname": "date_enrolled",
+   "fieldtype": "Date",
+   "label": "Date Enrolled"
+  },
+  {
+   "fieldname": "date_completed",
+   "fieldtype": "Date",
+   "label": "Date Completed"
+  },
+  {
+   "fetch_from": "enrollment_to.semester",
+   "fetch_if_empty": 1,
+   "fieldname": "semester",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Semester",
+   "link_filters": "[[\"Semester\",\"active\",\"=\",1]]",
+   "options": "Semester"
+  },
+  {
+   "fieldname": "section_break_gxjn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "academic_course_enrollment_contribution_table",
+   "fieldtype": "Table",
+   "label": "Academic Course Enrollment Contribution Table",
+   "options": "Academic Course Enrollment Contribution Table"
+  },
+  {
+   "default": "0",
+   "fieldname": "refresh",
+   "fieldtype": "Check",
+   "label": "Refresh"
+  },
+  {
+   "fetch_from": "semester.active",
+   "fieldname": "active_semester",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Active Semester"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Select",
+   "label": "Grade",
+   "options": "A\nA-\nA+\nB\nB-\nB+\nC\nC-\nC+\nD\nD+\nP\nPass\nREG\nReg-SU24\nTR"
+  },
+  {
+   "fetch_from": "enrollment_to.credits",
+   "fieldname": "course_credits",
+   "fieldtype": "Read Only",
+   "label": "Course Credits"
+  },
+  {
+   "fieldname": "course_section",
+   "fieldtype": "Data",
+   "label": "Course Section"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Data",
+   "label": "Program"
+  },
+  {
+   "fetch_from": "enrollment_to.course_sub_type",
+   "fieldname": "course_sub_type",
+   "fieldtype": "Read Only",
+   "label": "Course Sub-type"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "make_attachments_public": 1,
+ "modified": "2024-11-10 00:42:31.015580",
+ "modified_by": "Administrator",
+ "module": "Nucta",
+ "name": "Academic Course Enrollment",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Nucta Super Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Nucta Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Nucta Moderator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "student_id, student_name, student_nu_id, student_nu_email, date_enrolled, date_completed, status",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Blue",
+   "title": "Pending"
+  },
+  {
+   "color": "Green",
+   "title": "Approved"
+  },
+  {
+   "color": "Purple",
+   "title": "Certified"
+  }
+ ],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

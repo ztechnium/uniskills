@@ -1,0 +1,41 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-17 02:27:21.868237",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "skill_group",
+  "contribution_weight"
+ ],
+ "fields": [
+  {
+   "fieldname": "skill_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Skill Group",
+   "options": "Skill Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contribution_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Contribution Weight"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-08 20:42:12.055738",
+ "modified_by": "Administrator",
+ "module": "Nucta",
+ "name": "Skill Group Contribution",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

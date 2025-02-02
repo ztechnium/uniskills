@@ -1,0 +1,208 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{course_code}-{semester}",
+ "creation": "2024-09-17 04:48:14.921708",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "course_name",
+  "course_code",
+  "course_sub_type",
+  "program",
+  "degree",
+  "credits",
+  "max_score",
+  "description",
+  "column_break_ypnv",
+  "enrollment_status",
+  "category",
+  "school",
+  "enrollment_link",
+  "semester",
+  "is_active_semester",
+  "image",
+  "section_break_tpmf",
+  "course_sub_skill_contribution"
+ ],
+ "fields": [
+  {
+   "fieldname": "course_name",
+   "fieldtype": "Data",
+   "label": "Course Name"
+  },
+  {
+   "fieldname": "course_code",
+   "fieldtype": "Data",
+   "label": "Course Code"
+  },
+  {
+   "fieldname": "max_score",
+   "fieldtype": "Float",
+   "label": "Max Score"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_ypnv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Category",
+   "options": "Academic\nExtracurricular"
+  },
+  {
+   "fieldname": "school",
+   "fieldtype": "Link",
+   "label": "School",
+   "options": "College"
+  },
+  {
+   "fieldname": "enrollment_link",
+   "fieldtype": "Data",
+   "label": "Enrollment Link"
+  },
+  {
+   "fieldname": "semester",
+   "fieldtype": "Link",
+   "label": "Semester",
+   "options": "Semester"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "section_break_tpmf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "course_sub_skill_contribution",
+   "fieldtype": "Table",
+   "label": "Course Sub-Skill Contribution",
+   "options": "Course Sub-Skill Contribution"
+  },
+  {
+   "default": "Open",
+   "fieldname": "enrollment_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Enrollment Status",
+   "options": "Open\nClosed"
+  },
+  {
+   "fetch_from": "semester.active",
+   "fieldname": "is_active_semester",
+   "fieldtype": "Read Only",
+   "label": "Is Active Semester"
+  },
+  {
+   "default": "LECT",
+   "fieldname": "course_sub_type",
+   "fieldtype": "Select",
+   "label": "Course Sub-Type",
+   "options": "LECT\nPRAC\nPROJ"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Data",
+   "label": "Program"
+  },
+  {
+   "fieldname": "degree",
+   "fieldtype": "Select",
+   "label": "Degree",
+   "options": "BA\nBS"
+  },
+  {
+   "fieldname": "credits",
+   "fieldtype": "Int",
+   "label": "Credits"
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "group": "Links",
+   "link_doctype": "Academic Course Enrollment",
+   "link_fieldname": "enrollment_to"
+  }
+ ],
+ "make_attachments_public": 1,
+ "modified": "2024-11-09 21:53:32.858434",
+ "modified_by": "Administrator",
+ "module": "Nucta",
+ "name": "Academic Course",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Nucta Super Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Nucta Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Nucta Moderator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "semester,school",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "course_name",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

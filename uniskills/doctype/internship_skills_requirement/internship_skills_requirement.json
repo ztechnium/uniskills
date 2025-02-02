@@ -1,0 +1,40 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-07 12:42:32.674478",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "required_skill",
+  "minimum_requirement"
+ ],
+ "fields": [
+  {
+   "fieldname": "required_skill",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Required Skill",
+   "link_filters": "[[\"Skill Group\",\"plot\",\"=\",1]]",
+   "options": "Skill Group"
+  },
+  {
+   "fieldname": "minimum_requirement",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Minimum Requirement"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-07 12:48:11.554641",
+ "modified_by": "Administrator",
+ "module": "Nucta",
+ "name": "Internship Skills Requirement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
